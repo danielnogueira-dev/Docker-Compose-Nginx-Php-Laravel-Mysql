@@ -78,9 +78,17 @@ Laravel versão 5.5.22
 
    127.0.0.1 api.dev
 
-5. Instruções iniciais para rodar o Laravel no localhost:
+5. Acessar o shell do container:
+    
+	winpty docker exec -it nginx bash
 
-	Acessar a pasta api.dev: cd /var/www/html
+	winpty docker exec -it php-fpm bash
+	
+	winpty docker exec -it mysql bash
+   
+6. Instruções iniciais para rodar o Laravel no localhost:
+
+	Acessar a pasta: cd /var/www/html
 	
 	Executar comando para criar pasta vendor do laravel: composer install
 	
@@ -88,7 +96,7 @@ Laravel versão 5.5.22
 	
 	Executar comando para gerar chaves necessarias para rodar o laravel: php artisan key:generate
 
-6. Instruções iniciais para rodar o Laravel no api.dev:
+7. Instruções iniciais para rodar o Laravel no api.dev:
 
 	Acessar a pasta api.dev: cd /var/www/html/api.dev
 	
@@ -98,19 +106,11 @@ Laravel versão 5.5.22
 	
 	Executar comando para gerar chaves necessarias para rodar o laravel: php artisan key:generate
 	
-7. Abra no navegador
+8. Abra no navegador
 
    http://localhost
 
    http://api.dev
-
-8. Acessar o shell do container:
-    
-	winpty docker exec -it nginx bash
-
-	winpty docker exec -it php-fpm bash
-	
-	winpty docker exec -it mysql bash
 
 9. Acessar o banco de dados dentro do container Mysql
 
