@@ -25,6 +25,15 @@ nginx/sites/*
 # rastreia o arquivo readme.md (Não ignorar isso)
 !readme.md
 
+# rastreia o arquivo .gitattributes (Não ignorar isso)
+!.gitattributes
+
+# rastreia o arquivo .env.example (Não ignorar isso)
+!.env.example
+
+# rastreia o arquivo .htaccess (Não ignorar isso)
+!.htaccess
+
 # ignora todos os arquivos que começam com ~
 ~*
 
